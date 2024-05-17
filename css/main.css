@@ -1,0 +1,452 @@
+body{
+    margin: 0px 0px;
+    padding: 0;
+    padding-top: 37px;
+}
+
+
+/*********** navegation bar ************/
+header{
+    position: fixed;
+    top: 0;
+    height: 25px;
+    width: 100%;
+    z-index: 1000;
+}
+
+#header{
+    padding: 0;
+    border-bottom: 2px solid #FFC300;
+}
+
+/* home image */
+#home-image{
+    margin-left: 10px;
+}
+
+/* List of links */
+#nav-list{
+    margin-right: 0;
+    margin-left: 60%;
+}
+
+#nav-list li{
+    padding-left: 15px;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+
+/*********** Presentation ************/
+#presentation{
+    background-color: black;
+    border-bottom: 5px solid #FFC300;
+}
+
+/* title */
+h1{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 1000%;
+    color: white;
+    margin: 1% 5%;
+    margin-left: 3%;
+}
+
+/* presentation quote */
+#presentation-q{
+    font-family: "Montserrat", sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: large;
+    color: #FFD60A;
+    width: 80%;
+    padding: 7%;
+    text-align: center;
+}
+
+
+/*********** Introduction ************/
+#introduction{
+    background-color: black;
+    padding: 1%;
+    border-bottom: 5px solid #003566;
+}
+
+/* tittle */
+.introduction-title{
+    font-family: "Bebas Neue", sans-serif;
+    color: white;
+    font-weight: 200;
+    font-size: 300%;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    padding-left: 2%;
+}
+
+/* paragraph 1 */
+#introduction p{
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    text-align: justify;
+    padding-left: 2%;
+}
+
+
+/* list links */
+#introduction a{
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    text-decoration:none;
+}
+
+#introduction a:hover{
+    text-decoration: underline;
+    color: #FFC300;
+}
+
+/* list design */
+#introduction ul{
+    list-style: square;
+    color: #FFD60A;
+    line-height: 150%;
+}
+
+/* solar system image */
+#introduction img{
+    height: 88%;
+}
+
+
+/*********** Sun ************/
+#sun{
+    padding: 1%;
+    border-bottom: 5px solid #003566;
+}
+
+#sun-text{
+    padding: 5%;
+}
+
+/* title - sun */
+#sun h3{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 200;
+    font-size: 300%;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    padding-left: 1%; 
+    border-bottom: 1px solid #003566;
+}
+
+/* sun description */
+#sun p{
+    font-family: "Montserrat", sans-serif;
+    text-align: justify;
+    padding-top: 2%;
+}
+
+/* sun image */
+#sun img{
+    width: 60%;
+    margin-right: 8%;
+    margin-left: 20%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#sun-image{
+    border-left: 1px solid #FFC300;
+}
+
+
+/*********** Planets ************/
+#planets{
+    padding: 1%;
+    margin: 0;
+    background-color: black;
+    border-bottom: 5px solid #FFC300; 
+    z-index: 1;
+}
+
+/* planets - title */
+#planets h3{
+    font-family: "Bebas Neue", sans-serif;
+    color: white;
+    font-weight: 200;
+    font-size: 300%;
+    padding-top: 2%;
+    padding-bottom: 0;
+    padding-left: 2%;
+}
+
+/* Carousel  design*/
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+        /* medium and up screens */
+@media (min-width: 768px) {
+
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(25%);
+    }
+
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-25%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+    transform: translateX(0);
+}
+
+/* carousel sizing */
+.carousel-item{
+    height: 500px !important;
+}
+.card{
+    height: 100% !important;
+    border: 1px solid #FFC300; 
+}
+
+/* carousel tittles */
+#planets h4{
+    font-family: "Bebas Neue", sans-serif;
+    font-size:x-large;
+}
+
+/* planets description */
+#planets p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    text-align: justify;
+}
+
+/* planet-image */
+
+.card-img{
+    height: 50%;
+}
+.card-body{
+    height: 50%;
+}
+
+#planets .img-fluid{
+    height: 100%;
+    width: 100%;
+}
+
+
+/*********** NASA ************/
+#nasa{
+    padding: 1%;
+    border-bottom: 5px solid #003566;
+}
+
+#nasa-text{
+    padding: 5%;
+}
+
+/* title - nasa */
+#nasa h3{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 200;
+    font-size: 300%;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    padding-left: 1%; 
+    border-bottom: 1px solid #003566;
+}
+
+/* nasa description */
+#nasa p{
+    font-family: "Montserrat", sans-serif;
+    text-align: justify;
+    padding-top: 2%;
+}
+
+/* presentation quote */
+#nasa-q{
+    font-family: "Montserrat", sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: x-large;
+    color: #003566;
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+    border-bottom: 1px solid #003566;
+}
+
+/* nasa image */
+#nasa img{
+    width: 60%;
+    margin-right: 8%;
+    margin-left: 20%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#nasa-image{
+    border-left: 1px solid #FFC300;
+}
+
+
+/*********** FOOTER ************/
+footer{
+    background-color: #003566;
+}
+
+#contact{
+    padding-top: 50px;
+    padding-left: 20px;
+}
+
+/* logo image */
+#logo-footer{
+    padding: 0;
+    background-color: #003566;
+}
+
+footer #logo-image{
+    height: 65px;
+    padding-top: 10px;
+    padding-left: 50px;
+    border: none;
+    background-color: #003566;
+}
+
+/* contact list */
+#footer-list{
+    font-family: "Montserrat", sans-serif;
+    font-size: 11px;
+    width: 32%;
+
+}
+
+#footer-list li{
+    padding: 3px;
+    color: white;
+    background-color: #003566;
+}
+
+/* social media logos */
+#social-links{
+    width: 11%;
+    margin: auto;
+}
+
+#social{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    justify-content: space-between;
+}
+
+#social img{
+    height: 28px;
+    list-style: none;
+    border: none;
+}
+
+
+/*********** cellphone view ************/
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 300%;
+    }
+    blockquote{
+        font-size: 90%;
+        width: 100%;
+    }
+    #introduction{
+        padding-left: 10%;
+    }
+    #planets-list{
+        padding: 0;
+        padding-right: 10%;
+    }
+    .introduction-title{
+        padding-top: 5%;
+        font-size: 150%;
+    }
+    #introduction-list{
+        height: 500px;
+    }
+    #planets-list{
+        height: 57%;
+    }
+    #introduction p{
+        font-size: small;
+    }
+    #introduction a{
+        font-size: small;
+    }
+    #introduction img{
+        height: 100%;
+    }
+    #SS-image{
+        height: 30%;
+        padding: 0;
+        padding-right: 10%;
+    }
+    #sun-image{
+        border-top: 1px solid #FFC300;
+        border-left: none;
+    }
+    #sun{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    #sun h3{
+        font-size: 180%; 
+    }
+    #sun p{
+        font-size: small;
+    }
+    #planets h3{
+        padding-top: 8%;
+        padding-left: 8%;
+        font-size: 180%; 
+    }
+    #nasa-image{
+        border-top: 1px solid #FFC300;
+        border-left: none;
+    }
+    #nasa{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    #nasa h3{
+        font-size: 180%; 
+    }
+    #nasa p{
+        font-size: small;
+    }
+    #footer-list{
+        width: 100%;
+    }
+    #social-links{
+        width: 50%;
+        margin: auto;
+        padding-top: 20px;
+    }
+  }
